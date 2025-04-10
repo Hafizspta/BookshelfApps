@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: #2629df;
+  color: white;
+  margin-bottom: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+section {
+  width: 50%;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid rgb(121, 105, 105);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+  margin-bottom: 10px;
+}
+
+main section h2 {
+  color: #2629df;
+}
+
+main section.search h2,
+main section.newbook h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2629df;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+section.newbook span {
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #1b1fb2;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-group input[type='checkbox'] {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  margin: 0; /* Hilangkan margin bawaan */
+}
+
+input[type='text'],
+input[type='number'],
+select,
+button {
+  margin-bottom: 10px;
+}
+
+.book-item {
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.book-item .action button {
+  margin-top: 5px;
+}
